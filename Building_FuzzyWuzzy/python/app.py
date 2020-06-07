@@ -3,12 +3,9 @@ from flask import Flask,render_template,request
 import json
 
 #app initalization
-
 app = Flask(__name__,template_folder='../templates',static_folder="../static")
 
-
 #main index page route
-
 @app.route('/')
 def home():
     return render_template('index.html')
