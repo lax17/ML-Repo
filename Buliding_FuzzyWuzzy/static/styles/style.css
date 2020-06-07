@@ -1,0 +1,93 @@
+html,
+body,
+* {
+margin:0;
+box-sizing:border-box;
+
+}
+html,body{
+
+width:100%;
+height:100%;
+background:"blue";
+}
+
+h1 ,h2 ,h3,p{
+
+font-family : 'Open Sans',sans-serif;
+
+}
+
+p {
+font-size:14px;
+margin:10px 0;
+
+}
+
+.main-page{
+
+width:100%;
+height :100%;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+
+}
+
+.main-content{
+width:60%;
+height:40%;
+display:flex;
+flex-direction:column;
+justify-content:center;
+
+}
+
+.top-half{
+
+flex-basis:30%;
+flex-grow:1;
+
+}
+.bottom-input {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 40%;
+    flex-grow: 1;
+}
+
+
+.bottom-half{
+flex-basis:70%;
+flex-grow:2;
+display:flex;
+flex-direction:column;
+
+}
+.input-form * {
+    padding: 1%;
+    margin: 2%;
+}
+
+.input-form {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.input-form button {
+    align-self: center;
+    height: 100%;
+    flex-grow: 1;
+    border: 2px solid #008CBA;
+    border-radius: 4px;
+    background-color: #008CBA;
+    color: #fff;
+}
+
+.input-form button:hover {
+    color: #fff;
+    background-color: #009CBA;
+    border: 2px solid #009CBA;
+    cursor: pointer;
+}

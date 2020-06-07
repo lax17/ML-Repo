@@ -25,7 +25,7 @@ def home():
 #route for prediction of sentiment analysis model and classifier
 
 @app.route('/predict',methods=['POST'])
-def perdict():
+def predict():
     # retrieve global variables to store input and output
     global model_input
     global model_output
@@ -45,6 +45,8 @@ def perdict():
 
     model_input = text
     model_output = prediction[0]
+    print(prediction)
+    print(model_output)
     return model_output
 
 
@@ -105,8 +107,7 @@ def save_pred():
 
 
 if __name__ == "__main__":
-    app.run("5000",debug=True)
-
+    app.run("localhost",debug=True)
 
 
 

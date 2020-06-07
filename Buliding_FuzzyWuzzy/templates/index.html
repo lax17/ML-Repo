@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>FuzzyWuzzy Metrics</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='styles/style.css')}}">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="main-page">
+        <span id="main-div" class="main-content">
+            <div class="top-half">
+                <h1>Quest for the perfect FuzzyWuzzy scorer</h1>
+                <p><i>Let's see all the FuzzyWuzzy scorers we can use:</i></p>
+            </div>
+            <div class="form-group bottom-half">
+                <form id="input-form" class="input-form" action="{{url_for('fuzzyWuzzyScorers')}}" method="post">
+                    <input type="text" class="form-control" name="input_text_first" placeholder="First Text">
+                    <input type="text" class="form-control" name="input_text_second" placeholder="Second Text">
+                    <button type="submit" class="form-control btn btn-primary btn-block  form-control">Display
+                        Scores</button>
+                </form>
+
+            </div>
+            <table class="table table-hover ">
+                <thead>
+                    <th>
+                        <h4>Scorer</h4>
+                    </th>
+                    <th>
+                        <h4>Similarity</h4>
+                    </th>
+                </thead>
+                <tbody class="our-table success">
+
+                </tbody>
+
+            </table>
+
+
+    </div>
+
+
+    </div>
+
+
+</body>
+<script src="{{url_for('static',filename='scripts/script.js')}}"></script>
+
+</html>
